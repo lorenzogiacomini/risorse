@@ -38,6 +38,18 @@
       ]
     },
     {
+      "nome": "Fly.io Sprites",
+      "url": "https://sprites.dev",
+      "categoria": "Infrastruttura per agenti e sandbox",
+      "descrizione": "Servizio di Fly.io che dà una macchina virtuale Linux in pochi secondi, persistente e con checkpoint e ripristino, pensata per agenti di coding.",
+      "casi_uso": [
+        "Ambiente isolato e persistente per far girare agenti come Claude Code e Codex, già preinstallati",
+        "Checkpoint e ripristino dello stato: tornare a un punto salvato se l'agente rompe qualcosa",
+        "API per eseguire codice non fidato in una sandbox sicura",
+        "Collegare servizi esterni (GitHub, Slack, OpenRouter) tramite Connectors, senza lasciare le credenziali nella macchina"
+      ]
+    },
+    {
       "nome": "Railway.com",
       "url": "https://railway.com",
       "categoria": "Hosting e deploy",
