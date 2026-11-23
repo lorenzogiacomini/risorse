@@ -94,6 +94,18 @@
       ]
     },
     {
+      "nome": "Supermemory",
+      "url": "https://supermemory.ai/",
+      "categoria": "Memoria e contesto per l'AI",
+      "descrizione": "Infrastruttura di memoria e contesto per agenti AI: un'unica API per memoria a lungo termine, RAG, profili utente e connettori, senza configurare database vettoriali o pipeline di embedding.",
+      "casi_uso": [
+        "Dare memoria persistente a un assistente o a un agente, così ricorda utenti e conversazioni precedenti",
+        "Collegare un client MCP (Claude, Cursor, VS Code) per avere memoria condivisa tra strumenti diversi",
+        "Importare documenti e dati da Google Drive, Gmail e Notion e interrogarli in linguaggio naturale",
+        "Costruire assistenti personalizzati per team o clienti con contesto separato per utente o progetto"
+      ]
+    },
+    {
       "nome": "Dyad",
       "url": "https://dyad.sh",
       "categoria": "Sviluppo con l'AI",
