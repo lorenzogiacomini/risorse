@@ -1,5 +1,115 @@
 {
   "titolo": "Le mie risorse",
   "descrizione": "Lista curata delle risorse che utilizzo abitualmente, con i casi d'uso di ciascuna.",
-  "risorse": []
+  "risorse": [
+    {
+      "nome": "DigitalOcean MicroVMs",
+      "url": "https://docs.digitalocean.com/products/microvms/",
+      "categoria": "Infrastruttura per agenti e sandbox",
+      "descrizione": "Macchine virtuali leggere che eseguono un'immagine container in un kernel isolato, vanno in pausa quando sono inattive e riprendono con memoria e processi intatti.",
+      "casi_uso": [
+        "Sandbox per eseguire codice non fidato o generato da un'AI, isolato dal resto dell'infrastruttura",
+        "Sessioni di agenti AI e ambienti dedicati a singolo utente",
+        "Checkpoint (salvataggi dello stato): si prepara l'ambiente una volta e si avviano nuove sessioni da lì",
+        "Costo al secondo, solo mentre la macchina è in esecuzione"
+      ]
+    },
+    {
+      "nome": "DigitalOcean Harness Runtime",
+      "url": "https://docs.digitalocean.com/products/managed-agents/agent-harness-runtime/concepts/overview/",
+      "categoria": "Infrastruttura per agenti e sandbox",
+      "descrizione": "Sandbox gestite in microVM, isolate a livello hardware e con strumenti integrati come Chromium, per far girare harness di agenti ed eseguire codice (public preview).",
+      "casi_uso": [
+        "Far girare agenti di coding come Codex CLI, Claude Code e OpenCode in cloud, in sandbox isolate",
+        "Mettere in pausa, riprendere e fare il fork delle sessioni, tenendo sotto controllo i costi",
+        "Automazioni con browser (Chromium integrato) senza usare il proprio PC"
+      ]
+    },
+    {
+      "nome": "Shellbox.dev",
+      "url": "https://shellbox.dev",
+      "categoria": "Infrastruttura per agenti e sandbox",
+      "descrizione": "Istanze Linux su richiesta, accessibili con un normale client SSH, che vanno in pausa alla disconnessione e conservano lo stato.",
+      "casi_uso": [
+        "Ambiente di sviluppo persistente a cui collegarsi da qualsiasi dispositivo",
+        "Ospitare strumenti self-hosted, per esempio bolt.diy, raggiungibili da internet",
+        "Provare software senza toccare il proprio computer",
+        "Costo a consumo: circa 0,05 $/ora da attiva e 0,005 $/ora in pausa"
+      ]
+    },
+    {
+      "nome": "Railway.com",
+      "url": "https://railway.com",
+      "categoria": "Hosting e deploy",
+      "descrizione": "Piattaforma di hosting che distribuisce app e database a partire da un repository o da un template.",
+      "casi_uso": [
+        "Mettere online rapidamente servizi, API e bot con database incluso",
+        "Distribuire strumenti open source da template pronti, come bolt.diy",
+        "Prototipi e servizi di backend senza gestire server"
+      ]
+    },
+    {
+      "nome": "Vercel.com",
+      "url": "https://vercel.com",
+      "categoria": "Hosting e deploy",
+      "descrizione": "Piattaforma di deploy per siti e applicazioni web, con pubblicazione automatica a ogni modifica del repository.",
+      "casi_uso": [
+        "Pubblicare siti e app front-end (Next.js e simili) con anteprima per ogni modifica",
+        "Funzioni serverless (codice che gira solo quando viene chiamato) e domini personalizzati",
+        "Tenere sotto controllo log e deployment dei progetti"
+      ]
+    },
+    {
+      "nome": "Supabase.com",
+      "url": "https://supabase.com",
+      "categoria": "Backend e database",
+      "descrizione": "Backend pronto all'uso costruito su PostgreSQL, con autenticazione, storage di file e API automatiche.",
+      "casi_uso": [
+        "Database Postgres gestito per app e prototipi",
+        "Autenticazione utenti e storage di file senza scrivere un backend",
+        "Edge Functions (piccole funzioni lato server) e API generate dalle tabelle"
+      ]
+    },
+    {
+      "nome": "OpenRouter.ai",
+      "url": "https://openrouter.ai",
+      "categoria": "Modelli AI",
+      "descrizione": "Un'unica API che dà accesso a molti modelli AI di fornitori diversi, con un solo account e una sola fatturazione.",
+      "casi_uso": [
+        "Provare e confrontare modelli diversi cambiando solo il nome del modello",
+        "Usare una sola chiave API in strumenti che chiedono le proprie chiavi, come Dyad e bolt.diy",
+        "Passare a un altro modello se uno è lento, costoso o non disponibile"
+      ]
+    },
+    {
+      "nome": "Dyad",
+      "url": "https://dyad.sh",
+      "categoria": "Sviluppo con l'AI",
+      "descrizione": "Costruttore di app AI locale e open source, alternativa a Lovable, v0 e Bolt, eseguito sul proprio computer (Mac e Windows) con le proprie chiavi API.",
+      "casi_uso": [
+        "Creare app complete dialogando con l'AI, tenendo codice e dati in locale",
+        "Prototipare in fretta e poi esportare il codice"
+      ]
+    },
+    {
+      "nome": "bolt.diy",
+      "url": "https://github.com/stackblitz-labs/bolt.diy",
+      "categoria": "Sviluppo con l'AI",
+      "descrizione": "Versione open source di Bolt che permette di scegliere l'LLM per ogni singolo prompt e gira nel browser grazie ai WebContainers di StackBlitz.",
+      "casi_uso": [
+        "Generare e modificare app full-stack da prompt, scegliendo il modello più adatto",
+        "Metterlo in produzione con Docker, su Railway o su un box Shellbox"
+      ]
+    },
+    {
+      "nome": "Trae",
+      "url": "https://www.trae.ai/",
+      "categoria": "Sviluppo con l'AI",
+      "descrizione": "IDE con AI di ByteDance basato sull'architettura di VS Code, con modalità Builder che crea applicazioni da una descrizione in linguaggio naturale.",
+      "casi_uso": [
+        "Sviluppo quotidiano con assistente AI integrato nell'editor",
+        "Partire da zero con la modalità Builder, o delegare più lavoro con SOLO, la modalità di sviluppo autonomo"
+      ]
+    }
+  ]
 }
