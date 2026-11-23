@@ -110,6 +110,56 @@
         "Sviluppo quotidiano con assistente AI integrato nell'editor",
         "Partire da zero con la modalità Builder, o delegare più lavoro con SOLO, la modalità di sviluppo autonomo"
       ]
+    },
+    {
+      "nome": "OpenHands",
+      "url": "https://openhands.dev/",
+      "categoria": "Sviluppo con l'AI",
+      "descrizione": "Agente di coding autonomo e open source: scrive, esegue e corregge codice da solo, a partire da un compito assegnato.",
+      "casi_uso": [
+        "Delegare task di sviluppo (bug, refactoring, piccole feature) lavorando su un repository",
+        "Eseguirlo in sandbox isolate, per esempio sulle infrastrutture per agenti già in lista"
+      ]
+    },
+    {
+      "nome": "Model Context Protocol",
+      "url": "https://modelcontextprotocol.io/docs/getting-started/intro",
+      "categoria": "Sviluppo con l'AI",
+      "descrizione": "Standard aperto per collegare gli assistenti AI a strumenti e dati esterni: una presa universale per far usare all'AI i propri servizi.",
+      "casi_uso": [
+        "Collegare l'AI a database, API e applicazioni tramite server MCP",
+        "Capire come costruire connettori personalizzati"
+      ]
+    },
+    {
+      "nome": "Dify",
+      "url": "https://dify.ai/",
+      "categoria": "Pipeline e automazioni",
+      "descrizione": "Piattaforma per sviluppare applicazioni AI e agenti, con workflow visuali e gestione dei modelli.",
+      "casi_uso": [
+        "Creare chatbot o assistenti interni con una base di conoscenza propria",
+        "Orchestrare passaggi in sequenza (recupero dati, modello, azione) e pubblicarli come servizio"
+      ]
+    },
+    {
+      "nome": "Composio",
+      "url": "https://composio.dev/",
+      "categoria": "Pipeline e automazioni",
+      "descrizione": "Strumenti e integrazioni pronti per gli agenti AI, compatibili con MCP.",
+      "casi_uso": [
+        "Dare a un agente accesso a molte app (CRM, e-mail, calendario) senza scrivere ogni integrazione",
+        "Gestire in modo centralizzato autenticazione e permessi degli strumenti"
+      ]
+    },
+    {
+      "nome": "Docling",
+      "url": "https://docling-project.github.io/docling/",
+      "categoria": "Pipeline e automazioni",
+      "descrizione": "Libreria open source che converte PDF, DOCX e altri documenti in dati utilizzabili da AI e sistemi RAG.",
+      "casi_uso": [
+        "Preparare documenti per l'indicizzazione ed estrarne testi e tabelle, anche con OCR",
+        "Fare da primo passo di una pipeline di dati verso un sistema RAG"
+      ]
     }
   ]
 }
