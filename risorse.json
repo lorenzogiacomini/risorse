@@ -156,6 +156,18 @@
       ]
     },
     {
+      "nome": "codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "categoria": "Sviluppo con l'AI",
+      "descrizione": "Server MCP open source (licenza MIT) che gira in locale e costruisce un grafo di conoscenza persistente del codice, della documentazione e dell'infrastruttura di un repository, così che un agente AI possa interrogarlo invece di leggere i file uno per uno.",
+      "casi_uso": [
+        "Far capire a un agente di coding (Claude Code, Cursor, Codex e altri) una codebase grande o sconosciuta, riducendo letture ripetute di file e consumo di token",
+        "Analisi d'impatto: stimare quali parti del progetto tocca una modifica prima di farla",
+        "Seguire le chiamate tra funzioni e servizi e risalire da un deployment (Docker, Kubernetes, Terraform) al codice che lo esegue",
+        "Tutto in locale, senza API key né telemetria; indice su SQLite"
+      ]
+    },
+    {
       "nome": "Dify",
       "url": "https://dify.ai/",
       "categoria": "Pipeline e automazioni",
